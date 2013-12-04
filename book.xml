@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" version="5.0" xml:lang="es">
+        
+<info>
+	<title>ADD 13/14.</title>
+	<author>
+		<personname>
+			<firstname>Sandra</firstname>
+			<surname>García Pérez</surname>
+		</personname>
+	</author>
+   
+	<pubdate><?dbtimestamp?></pubdate>
+</info>
+
+
+<chapter>
+	<title>Clientes ligeros.</title>
+	
+		<itemizedlist>
+                <listitem>MV Server</listitem>
+                <listitem>MV Cliente</listitem>
+        </itemizedlist>
+		
+	<section>
+		<title>MV Server</title>
+		
+		<mediaobject>			
+		<imageobject>
+			<imagedata fileref="imagenes/1(comprobacion que los usuarios estan creados).png" format="PNG" align="center" scale="50"/>
+		</imageobject>
+		<caption>
+			<para>En primer lugar tenemos que crear los usarios. El usuario principal es el usuario "sandra" y los otros tres usuarios 
+			tienen que contener el primer apellido. </para>
+		</caption>
+		</mediaobject>
+		
+		<mediaobject>			
+		<imageobject>
+			<imagedata fileref="imagenes/2(apt-get install ltsp-server-standalone).png" format="PNG" align="center" scale="50"/>
+		</imageobject>
+		<caption>
+			<para>Una vez creado todos los usuarios, continuamos con la instalación de LTSP</para>
+		</caption>
+		</mediaobject>
+		
+		<mediaobject>			
+		<imageobject>
+			<imagedata fileref="imagenes/3(apt-get install ssh).png" format="PNG" align="center" scale="50"/>
+		</imageobject>
+		<caption>
+			<para>Instalamos el SSH.</para>
+		</caption>
+		</mediaobject>
+		
+		<mediaobject>			
+		<imageobject>
+			<imagedata fileref="imagenes/4(configuraciones correctas.png" format="PNG" align="center" scale="50"/>
+		</imageobject>
+		<caption>
+			<para>Configuramos las IP, quedarian de esta manera.</para>
+		</caption>
+		</mediaobject>
+		
+		<mediaobject>			
+		<imageobject>
+			<imagedata fileref="imagenes/5(ltsp-build-client).png" format="PNG" align="center" scale="50"/>
+		</imageobject>
+		<caption>
+			<para>Creamos la imagen del cliente primero al realizarla en clase la creé de 64 bits y luego la creé varias veces la imagen de 32 bits
+			porque no me funcionaba al conectarme en el cliente.</para>
+		</caption>
+		</mediaobject>
+		
+		<mediaobject>			
+		<imageobject>
+			<imagedata fileref="imagenes/6(configurar el archivo).png" format="PNG" align="center" scale="50"/>
+		</imageobject>
+		<caption>
+			<para>Configuramos la interfaz.</para>
+		</caption>
+		</mediaobject>
+		
+		<mediaobject>			
+		<imageobject>
+			<imagedata fileref="imagenes/7(configuracion de archivo).png" format="PNG" align="center" scale="50"/>
+		</imageobject>
+		<caption>
+			<para>Configuración del archivo dhcpd.conf.</para>
+		</caption>
+		</mediaobject>
+	</section>
+	<section>
+		<title>MV Cliente</title>
+		<para>El cliente no se pudo conectar y no se cual fue el problema.</para>
+	</section>
+</chapter>
+
+</book>
