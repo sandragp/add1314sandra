@@ -4,10 +4,10 @@
 DOC=book
 
 XMLMAIN=main.xml
-XMLFILE=book.xml
-PDFFILE=$(DOC).pdf
-FOPFILE=$(DOC).fo
-HTMLFILE=$(DOC).html
+XMLFILE=tmp/second.xml
+PDFFILE=output/$(DOC).pdf
+FOPFILE=tmp/$(DOC).fo
+HTMLFILE=output/$(DOC).html
 
 FOXSL=/usr/share/xml/docbook/stylesheet/docbook-xsl-ns/fo/docbook.xsl
 HTMLXSL=/usr/share/xml/docbook/stylesheet/docbook-xsl-ns/xhtml-1_1/docbook.xsl
